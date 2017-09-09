@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="app" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste Zup</title>
+  <base href="/">
+</head>
+ <body class="body-wrapper">
+ <div class="container">
+ 	<form action="https://dribbble.com/oauth/authorize" class='nav-item is-tab'>
+      <input type='hidden' name='client_id' value='8c9b03aae9b8c213918ffc340705d35d5f3d54c24531d7ba845d797e419897d0' />
+      <input type='hidden' name='redirect_uri' value='http://localhost:8080/autenticacao' />
+      <input type='hidden' name='scope' value='public write' />
+
+      <button type='submit' class='btn btn-primary'>Login com Dribbble</button>
+    </form>
+
+ </div>
+   <div class="main-wrapper">
+    <ui-view></ui-view>
+  </div>
+
+</body>
+</html>
